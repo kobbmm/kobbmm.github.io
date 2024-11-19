@@ -16,25 +16,22 @@ body {
 /* Container styling */
 .container {
     width: 80%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden;
 }
 
 /* Header Section */
 header {
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ddd;
+    margin-bottom: 30px;
 }
 
 header .name-title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #007bff;
     font-weight: 700;
 }
@@ -42,11 +39,11 @@ header .name-title h1 {
 header .role {
     font-size: 1.2rem;
     color: #555;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 header .contact p {
-    margin-top: 8px;
+    margin-top: 5px;
     color: #555;
 }
 
@@ -60,40 +57,28 @@ header .contact a:hover {
 }
 
 /* About Me Section */
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-}
-
 .about p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555;
     line-height: 1.7;
 }
 
 /* Work Experience Section */
-.experience h2, .education h2, .skills h2 {
-    font-size: 2rem;
+.experience h2 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
     color: #333;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
 }
 
-.job, .degree {
-    margin-bottom: 25px;
-}
-
-.job h3, .degree h3 {
-    font-size: 1.5rem;
+.job h3 {
+    font-size: 1.3rem;
     color: #007bff;
     margin-bottom: 5px;
 }
 
-.job p, .degree p {
+.job p {
     font-size: 1rem;
     color: #777;
 }
@@ -106,4 +91,49 @@ ul {
 ul li {
     margin-bottom: 10px;
     font-size: 1rem;
-  
+    color: #555;
+}
+
+/* Skills Section */
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skills li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: #333;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .name-title h1 {
+        font-size: 2rem;
+    }
+
+    head
