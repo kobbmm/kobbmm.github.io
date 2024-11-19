@@ -1,96 +1,109 @@
-/* General reset and styling */
+/* General reset and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
 }
 
+/* Container styling */
 .container {
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+/* Header Section */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
+header .name-title h1 {
+    font-size: 3rem;
+    color: #007bff;
+    font-weight: 700;
 }
 
-header p {
+header .role {
     font-size: 1.2rem;
-    color: #777;
+    color: #555;
+    margin-top: 10px;
 }
 
-.contact p {
-    margin: 5px 0;
+header .contact p {
+    margin-top: 8px;
     color: #555;
 }
 
-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-section p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.job, .degree {
-    margin-bottom: 20px;
-}
-
-.job h3, .degree h3 {
-    font-size: 1.4rem;
-    color: #333;
-}
-
-.job p, .degree p {
-    color: #777;
-}
-
-ul {
-    list-style: none;
-    margin-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
-    color: #555;
-}
-
-footer a {
+header .contact a {
     color: #007bff;
     text-decoration: none;
 }
 
-footer a:hover {
+header .contact a:hover {
     text-decoration: underline;
 }
+
+/* About Me Section */
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Work Experience Section */
+.experience h2, .education h2, .skills h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.job, .degree {
+    margin-bottom: 25px;
+}
+
+.job h3, .degree h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.job p, .degree p {
+    font-size: 1rem;
+    color: #777;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  
