@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background-light: #ffffff; /* Light background */
+  --background-dark: #1a202c;  /* Dark background */
+  --text-light: #000000;       /* Light text color */
+  --text-dark: #ffffff;        /* Dark text color */
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+
+.nav-dots {
+  @apply flex gap-1;
+}
+
+.nav-dot {
+  @apply w-2 h-2 rounded-full bg-purple-300;
+}
+
+@media (min-width: 1024px) {
+  .lg-grid-areas-layout {
+    display: grid;
+    grid-template-areas:
+      "design design"
+      ". engineering";
+  }
+  .lg-grid-area-design {
+    grid-area: design;
+  }
+  .lg-grid-area-engineering {
+    grid-area: engineering;
+  }
+  .Skills-layout {
+    display: grid;
+    grid-template-areas: 
+      "frontend . devops"
+      ". backend .";
+    grid-gap: 20px;
+  }
+  
+  .frontend-area {
+    grid-area: frontend;
+  }
+  
+  .devops-area {
+    grid-area: devops;
+  }
+  
+  .backend-area {
+    grid-area: backend;
+  }
+  
+}
