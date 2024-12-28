@@ -48,28 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-h-screen bg-white px-8 lg:px-16 py-24">
-      <div
-       className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 lg-grid-areas-layout"
-       >
-      <div className="space-y-8 lg-grid-area-design">
-      <h2 className="text-6xl font-bold text-[#5E17EB]">Design</h2>
-      <p className="text-gray-600 text-lg leading-relaxed">
-        I'm probably not the typical designer positioned behind an Illustrator artboard adjusting pixels, but I design.
-        Immersed in stylesheets tweaking font sizes and contemplating layouts is where you'll find me. I'm committed to
-        creating fluent user experiences while staying fashionable.
-      </p>
-      </div>
-      <div className="space-y-8 lg-grid-area-engineering">
-      <h2 className="text-6xl font-bold text-[#5E17EB]">Engineering</h2>
-      <p className="text-gray-600 text-lg leading-relaxed">
-        In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function
-        independently of them to deliver fast, resilient solutions optimized for scale — performance and scalability
-        are priorities on my radar.
-      </p>
-      </div>
-      </div>
-      </section>
+
     </div>
   );
 }

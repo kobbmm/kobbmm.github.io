@@ -64,3 +64,59 @@ body.dark-theme {
   }
   
 }
+
+
+/* styles/globals.css */
+
+/* Media Query สำหรับหน้าจอที่มีความกว้างอย่างน้อย 1024px (Full Desktop) */
+@media (min-width: 1024px) {
+  /* ตั้งค่า container ให้เต็มหน้าจอ */
+  .landing-container {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* สร้าง 5 คอลัมน์ */
+    grid-template-rows: repeat(2, 1fr);     /* 2 แถว */
+    gap: 5px;  /* ระยะห่างระหว่างช่อง */
+    width: 100%;  /* กริดเต็มขนาดความกว้างหน้าจอ */
+    height: 100vh;  /* กริดเต็มขนาดความสูงของหน้าจอ */
+    box-sizing: border-box;  /* รวม padding ในขนาดของ box */
+    padding: 10px;  /* เว้นขอบด้านใน */
+    overflow: hidden;  /* ไม่ให้มีการเลื่อนหน้าจอ */
+  
+  }
+
+  /* สไตล์ของแต่ละช่อง */
+  .skills-item {
+    background-color: white;  /* พื้นหลังของช่อง */
+    border-radius: 10px;          /* ขอบโค้ง */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+  }
+
+  /* รูปภาพในแต่ละช่อง */
+  .skills-item img {
+    max-width: 80%;   /* ขยายขนาดภาพให้สูงสุด 80% ของช่อง */
+    max-height: 100px;  /* ให้ภาพสูงสุด 150px */
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;  /* เว้นระยะห่างระหว่างรูปภาพและข้อความ */
+    border-radius: 5px;
+  }
+
+  /* ข้อความในแต่ละช่อง */
+  .skills-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+}
+
