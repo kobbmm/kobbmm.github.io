@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
+import { Rokkitt } from 'next/font/google';
 import './globals.css';
 
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
+const Rokkit = Rokkitt({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'KHOMKIT 66022444',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>{children}</body>
+      <body className={Rokkit.className}>{children}</body>
     </html>
   );
 }

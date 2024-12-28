@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <section className="min-h-screen bg-white px-8 lg:px-16 py-24">
+        <section className="min-h-screen bg-white px-8 lg:px-16 py-24 "  id="AboutMe">
         <div
          className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 lg-grid-areas-layout"
          >
