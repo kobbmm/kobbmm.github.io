@@ -1,0 +1,49 @@
+.purple-paradise {
+  /*background: linear-gradient(to right, #283048, #859398); */
+  position: relative; /* Ensure the parent is positioned */
+}
+
+.top-left-title {
+  position: absolute;
+  top: 10px; /* Adjust as needed to make it close to the block */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  margin: 0; /* Remove margin to make it closer */
+  padding: 150px 20px ; /* Add padding for better appearance */
+  font-size: 4.5rem; /* Increase the size of the title */
+  text-align: center;
+  /*background-color: rgba(0, 0, 0, 0.5);  Optional: Add background color for better readability */
+  color: white; /* Optional: Set text color */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .top-left-title {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .top-left-title {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      padding: 6px 12px; /* Adjust padding for smaller screens */
+  }
+  .Setup {
+    display: grid;
+    grid-template-areas: 
+    "Set-1 . Set-1"
+    ".   Set-1  ."  ;
+  }
+  .Set-1 {
+    grid-area: Set-1;
+  }
+  .Set-2 {
+    grid-area: Set-2;
+  }
+  .Set-3 {
+    grid-area: Set-3;
+  }
+}

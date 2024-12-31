@@ -1,9 +1,23 @@
 'use client'; 
 
+import Hero from "../Hero";
+import Skills from "../Skills/1st-Rows/Myskills";
+import Projects from "../Project";
+import Contact from "../Contact";
+import Pages from ".";
+import AboutMe from "../AboutMe/AboutMe";
+
+
 import { useState } from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaFacebookF, FaGoogle } from "react-icons/fa"; 
+import "./index.css";
+
+
+
+
+
 
 
 
@@ -15,15 +29,13 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#5E17EB] min-h-screen text-white">
+    <main>
+    <div className="purple-paradise min-h-screen text-white">
    
-      <header className="relative z-50 pt-10 pb-6 px-8">
-        <nav className="flex justify-between items-center  px-40">
-         
-          <Link href="/">
-            <span className="text-2xl font-bold">My Portfolio</span>
-          </Link>
-
+      <header className="relative z-50 pt-10 pb-0 ">
+        <nav className="flex justify-between items-center  px-60 navbar">
+          
+            <span className="text-2xl font-bold pl-5">Khomkit</span>
           
           <button
             className="lg:hidden"
@@ -35,22 +47,20 @@ export default function Home() {
           </button>
 
          
-          <ul className="hidden lg:flex space-x-8">
-            <li>
+          <ul className="hidden lg:flex space-x-8  text-xl text-white ">
+            <li className="text-item">
               <Link href="#AboutMe">About Me</Link>
             </li>
-            <li>
+            <li className="text-item">
               <Link href="#Skills">Skills</Link>
             </li>
-            <li>
-              <Link href="#Contact">Contact</Link>
-            </li>
+  
           </ul>
         </nav>
 
        
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-0 right-0 mt-4 bg-white text-black p-4 rounded-lg shadow-lg">
+          <div className="lg:hidden absolute top-0 right-0 mt-4  text-white p-4 rounded-lg shadow-lg">
             <ul>
               <li className="mb-2">
                 <Link href="#aboutMe">About Me</Link>
@@ -67,20 +77,23 @@ export default function Home() {
       </header>
 
 
-      <section className="min-h-screen px-8 lg:px-16 py-24 relative flex items-center justify-center">
-        <div className="dot-pattern absolute top-0 right-0 w-64 h-64 opacity-20"></div>
+      <section className="min-h-screen px-8 lg:px-16 py-12 relative flex items-center justify-center">
+        <div className="absolute top-0 right-0 w-64 h-64 opacity-20"></div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6 text-center lg:text-left">
-            <h1 className="text-7xl font-bold text-white leading-tight">
-              Khomkit Manpasong
+          <p className="text-xl max-w-lg mx-auto lg:mx-0 Text-area  slide ">
+             Khomkit Manpasong
+           </p>
+            <h1 className="text-7xl font-bold text-white leading-tight ">
+            Frontend Developer
             </h1>
 
-            <div className='text-layout gap-4  lg:mx-0'>
+            <div className='text-layout gap-4  lg:mx-0'>  
             <div className="container mx-auto px-1 gap-8 Icon-area">
-                    <div className="flex justify-start gap-8">
+                    <div className="flex justify-start gap-8 ">
                   
                       <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/kobbmm"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-3xl hover:text-purple-500"
@@ -111,30 +124,28 @@ export default function Home() {
                   </div>
 
             
-            <p className="text-white text-2xl max-w-lg mx-auto lg:mx-0 Text-area">
-            Frontend Developer
-            </p>
-            </div>
+        
+            </div>  
 
                   
             
             <div className="grid grid-cols-2 gap-8 pt-8 mx-auto lg:mx-0 ">
               <div>
                 <p className="text-white">
-                  66022444 SoftwareEngineering University of Phayao
+                  66022444 Software Engineering University of Phayao
                 </p>
               </div>
             </div>
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-lime-300/20 blur-3xl rounded-full"></div>
-            <div className="relative z-10 w-full aspect-square max-w-md mx-auto">
+            <div className="relative z-10 w-full aspect-square max-w-md mx-auto item">
              
               <Image
-                src="/src/Dog.jpg"
+                src="/src/PFP.png"
                 alt="Profile"
-                width={400}
-                height={400}
+                width={500}
+                height={500}
                 className="rounded-2xl w-full h-full object-cover"
               />
             </div>
@@ -142,5 +153,13 @@ export default function Home() {
         </div>
       </section>
     </div>
+
+
+    <AboutMe />
+    
+
+
+
+    </main>
   );
 }

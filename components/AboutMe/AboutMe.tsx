@@ -1,3 +1,6 @@
+import "./AboutMe.css";
+
+
 export default function AboutMe() {
     return (
         <section className="min-h-screen bg-white px-8 lg:px-16 py-24 "  id="AboutMe">

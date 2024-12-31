@@ -1,0 +1,20 @@
+.purple-paradise {
+    background: linear-gradient(to right, #283048, #859398);
+  }
+  @media (min-width: 1024px) {
+  .Setup {
+    display: grid;
+    grid-template-areas: 
+    "Set-1 . Set-2"
+    ".     .     ."
+    ".   Set-3  ."  ;
+  }
+  .Set-1 {
+    grid-area: Set-1;
+  }
+  .Set-2 {
+    grid-area: Set-2;
+  }
+  .Set-3 {
+    grid-area: Set-3;
+  } }

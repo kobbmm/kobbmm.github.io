@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (min-width: 1024px) {
+    .lg-grid-areas-layout {
+      display: grid;
+      grid-template-areas:
+        "design design ."
+        ". engineering engineering";
+    }
+    
+    .lg-grid-area-design {
+      grid-area: design;
+    }
+  
+    .lg-grid-area-engineering {
+      grid-area: engineering;
+    }}
+
+    .text-item {
+        display: inline-block; /* Ensure transform works properly */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .text-item:hover {
+        transform: scale(1.2);
+    }
+    
+
+    .slide {
+        animation: Slide=in 2s ease-in-out 0.56;
+    }
+
+    .center {
+        width: 50%;
+        margin: auto;
+    }
