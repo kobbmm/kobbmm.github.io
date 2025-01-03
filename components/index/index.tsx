@@ -1,7 +1,4 @@
 'use client'; 
-
-import Skills from "../Skills/1st-Rows/Myskills";
-import Pages from ".";
 import AboutMe from "../AboutMe/AboutMe";
 
 

@@ -1,9 +1,5 @@
 import Pages from "../components/index";
-import AboutMe from "../components/AboutMe/AboutMe";
 import Skills from "../components/Skills/All-Rows/All"
-
-
-
 import "./globals.css";
 
 
