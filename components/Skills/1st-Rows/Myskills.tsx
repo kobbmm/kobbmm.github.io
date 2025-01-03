@@ -1,5 +1,5 @@
 'use client';
-
+import Image from "next/image";
 import "./Me.css";
 
 interface ZigzagBlockProps {
@@ -11,7 +11,7 @@ interface ZigzagBlockProps {
 const ZigzagBlock: React.FC<ZigzagBlockProps> = ({ imageSrc, altText }) => {
   return (
     <div className="zigzag-block">
-      <img src={imageSrc} alt={altText} className="zigzag-image" />
+      <Image src={imageSrc} alt={altText} className="zigzag-image" />
   
     </div>
   );

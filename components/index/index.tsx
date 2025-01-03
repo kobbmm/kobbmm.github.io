@@ -2,11 +2,7 @@
 import AboutMe from "../AboutMe/AboutMe";
 
 
-
-import { useLocation } from "react-router-dom";
-
-
-import { useState ,useEffect } from 'react'; 
+import { useState  } from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaFacebookF, FaGoogle } from "react-icons/fa"; 
