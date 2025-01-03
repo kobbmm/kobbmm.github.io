@@ -4,11 +4,11 @@ import "./Setup.css";
 export default function Setup() {
     return (
         
-        <main className=" min-h-screen flex justify-center items-center " >
+        <main className=" min-h-screen flex justify-center items-center "  >
+        
         <div className="Setup">
         <div className="Set-1 p-16"><Skills /></div> 
-        <div className="Set-2 p-16"><Skills /></div> 
-        <div className="Set-3 p-16"><Skills /></div> 
+        
         </div>
             
             

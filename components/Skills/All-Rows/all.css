@@ -4,10 +4,10 @@
 }
 
 .top-left-title {
-  position: absolute;
-  top: 10px; /* Adjust as needed to make it close to the block */
+  
+  top: 50%; /* Adjust as needed to make it close to the block */
   left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
+   /* Center horizontally */
   margin: 0; /* Remove margin to make it closer */
   padding: 150px 20px ; /* Add padding for better appearance */
   font-size: 4.5rem; /* Increase the size of the title */

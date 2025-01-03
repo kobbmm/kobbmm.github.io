@@ -1,14 +1,15 @@
 'use client'; 
 
-import Hero from "../Hero";
 import Skills from "../Skills/1st-Rows/Myskills";
-import Projects from "../Project";
-import Contact from "../Contact";
 import Pages from ".";
 import AboutMe from "../AboutMe/AboutMe";
 
 
-import { useState } from 'react'; 
+
+import { useLocation } from "react-router-dom";
+
+
+import { useState ,useEffect } from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaFacebookF, FaGoogle } from "react-icons/fa"; 
@@ -30,13 +31,12 @@ export default function Home() {
 
   return (
     <main>
-    <div className="purple-paradise min-h-screen text-white">
+    <div className=" min-h-screen text-white" id="home">
    
       <header className="relative z-50 pt-10 pb-0 ">
-        <nav className="flex justify-between items-center  px-60 navbar">
+        <nav className="flex justify-end items-center  px-60 navbar">
           
-            <span className="text-2xl font-bold pl-5">Khomkit</span>
-          
+           
           <button
             className="lg:hidden"
             onClick={toggleMenu}
@@ -84,9 +84,17 @@ export default function Home() {
           <p className="text-xl max-w-lg mx-auto lg:mx-0 Text-area  slide ">
              Khomkit Manpasong
            </p>
-            <h1 className="text-7xl font-bold text-white leading-tight ">
+            
+            
+            
+            
+            <h1 className="text-7xl font-bold text-white leading-tight ">  
             Frontend Developer
             </h1>
+            
+
+
+
 
             <div className='text-layout gap-4  lg:mx-0'>  
             <div className="container mx-auto px-1 gap-8 Icon-area">
@@ -158,8 +166,37 @@ export default function Home() {
     <AboutMe />
     
 
+  
+
+
+   
 
 
     </main>
   );
 }
+
+
+
+
+
+/*         <svg
+            width="400"
+            height="100"
+            viewBox="0 0 400 100"
+            data-aos=""  // แอนิเมชันเมื่อเลื่อนหน้า
+          >
+            <text
+              x="0"
+              y="50"
+              className="svg-text"
+              fill="none"
+              stroke="black"
+              strokeWidth="2"
+            >
+              About Me
+            </text>
+          </svg>
+          
+          
+          */

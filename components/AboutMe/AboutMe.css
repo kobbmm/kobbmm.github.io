@@ -3,3 +3,47 @@
 @tailwind utilities;
 
 
+
+.purple-paradise {
+    background: linear-gradient(to right, #283048, #859398);
+  }
+
+.text-linear{
+   color: linear-gradient(to right, #283048, #859398)
+} 
+
+.svg-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 72px;
+    animation: drawStroke 10s infinite linear;
+  }
+
+
+  @keyframes drawStroke {
+    0% {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+    }
+    100% {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 0;
+    }
+  }
+  .aos-init {
+    opacity: 0; 
+  }
+  
+  .aos-animate {
+    opacity: 1; 
+  }
+  
+/*      <svg width="400" height="100">
+        <text x="50" y="50" className="svg-text">
+        About Me
+        </text>
+        </svg>
+        
+        
+        
+        */

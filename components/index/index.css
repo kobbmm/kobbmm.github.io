@@ -2,38 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-right {
+    animation: slideRight 1s ease-in-out forwards;
+}
 
 @media (min-width: 1024px) {
     .lg-grid-areas-layout {
-      display: grid;
-      grid-template-areas:
-        "design design ."
-        ". engineering engineering";
+        display: grid;
+        grid-template-areas:
+            "design design ."
+            ". engineering engineering";
     }
-    
+
     .lg-grid-area-design {
-      grid-area: design;
+        grid-area: design;
     }
-  
+
     .lg-grid-area-engineering {
-      grid-area: engineering;
-    }}
+        grid-area: engineering;
+    }
+}
 
-    .text-item {
-        display: inline-block; /* Ensure transform works properly */
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .text-item:hover {
-        transform: scale(1.2);
-    }
-    
+.text-item {
+    display: inline-block; 
+    transition: transform 0.3s ease-in-out;
+}
 
-    .slide {
-        animation: Slide=in 2s ease-in-out 0.56;
-    }
+.text-item:hover {
+    transform: scale(1.2);
+}
 
-    .center {
-        width: 50%;
-        margin: auto;
+.slide {
+    animation: Slide=in 2s ease-in-out 0.56;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+}
+
+
+.svg-text {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    animation: drawStroke 10s infinite linear;
+  }
+
+  @keyframes drawStroke {
+    0% {
+      stroke-dasharray: 500; 
+      stroke-dashoffset: 500; 
     }
+    100% {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 0; 
+    }
+  }

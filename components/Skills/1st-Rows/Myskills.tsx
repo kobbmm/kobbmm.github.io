@@ -19,23 +19,39 @@ const ZigzagBlock: React.FC<ZigzagBlockProps> = ({ imageSrc, altText }) => {
 
 const Zigzag: React.FC = () => {
   return (
-    <div>      
+    <div id="Skills">  
+        <h1 className="top-left-title ">Skill</h1>    
         <div className="zigzag-container">
           {/* บล็อกที่ 1 */}
           <ZigzagBlock
-            imageSrc="/src/html.png"
+            imageSrc="/src/html5.svg"
             altText="Java Image"
           />
           {/* บล็อกที่ 2 */}
           <ZigzagBlock
-            imageSrc="/src/css-3.png"
+            imageSrc="/src/css3.svg"
             altText="JavaScript Image"
           />
           <ZigzagBlock
             imageSrc="/src/java.png"
             altText="Python Image"
           />
-          {/* บล็อกที่ 3 */}        
+          {/* บล็อกที่ 3 */} 
+          <ZigzagBlock
+            imageSrc="/src/react.svg"
+            altText="Python Image"
+          />
+          {/* บล็อกที่ 3 */}     
+          <ZigzagBlock
+            imageSrc="/src/tailwind.svg"
+            altText="Python Image"
+          />
+          {/* บล็อกที่ 3 */}     
+          <ZigzagBlock
+            imageSrc="/src/javascript.svg"
+            altText="Python Image"
+          />
+          {/* บล็อกที่ 3 */}            
         </div>
       </div>
    
