@@ -1,3 +1,12 @@
+Requirements for assignment 4
+- branch main มีประวัติ commit อย่างน้อย 5 ครั้ง 
+- มีการ สร้าง branch ใหม่ และ merge branch ที่สร้างใหม่ มาที่ branch main  ผ่าน pull request อย่างน้อย 1 ครั้ง
+- มีการใช้คำสั่ง git revert อย่างน้อย 1 ครั้ง 
+- มีการสร้าง release note และ versioning อย่างน้อย 1 ครั้ง 
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
