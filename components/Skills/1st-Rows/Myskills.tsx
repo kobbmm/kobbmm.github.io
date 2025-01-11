@@ -12,7 +12,7 @@ interface ZigzagBlockProps {
 const ZigzagBlock: React.FC<ZigzagBlockProps> = ({ imageSrc, altText, width, height }) => {
   return (
     <div className="zigzag-block">
-      <Image src={imageSrc} alt={altText} width={width} height={height} className="zigzag-image" />
+      <Image src={imageSrc} alt={altText} width={width} height={height} className="zigzag-image" layout="responsive" />
     </div>
   );
 };
