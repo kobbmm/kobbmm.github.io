@@ -1,7 +1,5 @@
 'use client'; 
 import AboutMe from "../AboutMe/AboutMe";
-
-
 import { useState  } from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,22 +22,11 @@ export default function Home() {
 
   return (
     <main>
-    <div className=" min-h-screen text-white" id="home">
+    <div className="min-h-screen text-white" id="home">
    
       <header className="relative z-50 pt-10 pb-0 ">
         <nav className="flex justify-end items-center  px-60 navbar">
           
-           
-          <button
-            className="lg:hidden"
-            onClick={toggleMenu}
-          >
-            <span className="block w-8 h-1 bg-white mb-2"></span>
-            <span className="block w-8 h-1 bg-white mb-2"></span>
-            <span className="block w-8 h-1 bg-white"></span>
-          </button>
-
-         
           <ul className="hidden lg:flex space-x-8  text-xl text-white ">
             <li className="text-item">
               <Link href="#AboutMe">About Me</Link>
